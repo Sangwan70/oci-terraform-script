@@ -1,0 +1,16 @@
+[
+  "Allow group ${module.iam_group${i}.group_name} to use volumes in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to use volume-attachments in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage log-groups in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to read metrics in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to read log-content in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to read metrics in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage tag-namespaces in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage generative-ai-chat in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage generative-ai-text-generation in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage generative-ai-text-summarization in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage generative-ai-text-embedding in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage generative-ai-work-request in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage generative-ai-family in compartment tseeducomp${i}",
+  "Allow group ${module.iam_group${i}.group_name} to manage data-science-family in compartment tseeducomp${i}",
+]

@@ -2,8 +2,17 @@ data "oci_identity_tenancy" "this" {
   tenancy_id = var.tenancy_ocid
 }
 
+variable "tenancy_name" {
+  description = "Optional: tenancy name for the console URL (used if it cannot be looked up)"
+  type        = string
+  default     = ""
+}
+
 locals {
-  console_url = "https://cloud.oracle.com/?tenant=${data.oci_identity_tenancy.this.name}&region=${var.region}"
+  // The tenancy name can come back null (e.g. limited permissions or Cloud Shell auth),
+  // so fall back to var.tenancy_name, and finally to a URL without the tenant parameter.
+  tenancy_name = data.oci_identity_tenancy.this.name != null ? data.oci_identity_tenancy.this.name : var.tenancy_name
+  console_url  = local.tenancy_name != "" ? "https://cloud.oracle.com/?tenant=${local.tenancy_name}&region=${var.region}" : "https://cloud.oracle.com/?region=${var.region}"
 }
 
 output "iam_users" {

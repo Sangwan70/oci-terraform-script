@@ -5,7 +5,7 @@ Creates training users on OCI: per participant a compartment (`tseeducomp<i>`), 
 (`policy<i>`, attached at tenancy root). Optionally creates a shared compartment
 (`tseeduaidp`) for one shared Oracle AI Data Platform instance.
 
-Requires Terraform >= 1.17 (tested target 1.17.1) and oracle/oci provider ~> 9.11.
+Requires Terraform >= 1.5.7 (OCI Cloud Shell default; also works on 1.17.x) and oracle/oci provider ~> 9.11.
 
 ## Usage
 ```bash

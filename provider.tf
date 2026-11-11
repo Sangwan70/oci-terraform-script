@@ -5,7 +5,7 @@ variable "region" {}
 variable "homeregion" {}
 
 terraform {
-  required_version = ">= 1.17.0" // Tested against Terraform v1.17.1 (latest stable, Oct 2026)
+  required_version = ">= 1.5.7" // works with OCI Cloud Shell (1.5.7) and the latest Terraform (1.17.x)
   required_providers {
     oci = {
       source  = "oracle/oci"

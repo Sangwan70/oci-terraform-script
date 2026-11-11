@@ -1,11 +1,11 @@
 // Copyright (c) 2018, 2021, Oracle and/or its affiliates.
 
 terraform {
-  required_version = ">= 1.0" // terraform version below 1.0 is not tested with this module
+  required_version = ">= 1.5" // upgraded for Terraform 1.17.x
   required_providers {
     oci = {
       source  = "oracle/oci"
-      version = ">= 4.96" // force downloading oci-provider compatible with terraform v1.0
+      version = ">= 9.0" // oracle/oci 9.x
     }
   }
 }
@@ -32,7 +32,7 @@ data "oci_identity_dynamic_groups" "this" {
 }
 
 locals {
-  dynamic_group_ids = concat(flatten(data.oci_identity_dynamic_groups.this.*.dynamic_groups), list(map("id", "")))
+  dynamic_group_ids = concat(flatten(data.oci_identity_dynamic_groups.this.*.dynamic_groups), [{ "id" = "" }])
 }
 
 ########################

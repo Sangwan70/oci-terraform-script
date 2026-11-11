@@ -1,4 +1,14 @@
-# Generated Terraform script
+# Generated Terraform script (2026-11-10 14:31) - 20 users
+
+module "iam_compartment_aidp" {
+  source                  = "./modules/iam-compartment"
+  tenancy_ocid            = var.tenancy_ocid
+  compartment_id          = var.tenancy_ocid
+  compartment_name        = "tseeduaidp"
+  compartment_description = "shared compartment for the class AI Data Platform instance"
+  compartment_create      = true # set to false if the compartment already exists
+  enable_delete           = true
+}
 
 module "iam_compartment1" {
   source                  = "./modules/iam-compartment"
@@ -10,7 +20,6 @@ module "iam_compartment1" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment2" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
@@ -20,7 +29,6 @@ module "iam_compartment2" {
   compartment_create      = true # if false, a data source with a matching name is created instead
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
-
 
 module "iam_compartment3" {
   source                  = "./modules/iam-compartment"
@@ -32,7 +40,6 @@ module "iam_compartment3" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment4" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
@@ -42,7 +49,6 @@ module "iam_compartment4" {
   compartment_create      = true # if false, a data source with a matching name is created instead
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
-
 
 module "iam_compartment5" {
   source                  = "./modules/iam-compartment"
@@ -54,7 +60,6 @@ module "iam_compartment5" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment6" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
@@ -64,7 +69,6 @@ module "iam_compartment6" {
   compartment_create      = true # if false, a data source with a matching name is created instead
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
-
 
 module "iam_compartment7" {
   source                  = "./modules/iam-compartment"
@@ -76,7 +80,6 @@ module "iam_compartment7" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment8" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
@@ -86,7 +89,6 @@ module "iam_compartment8" {
   compartment_create      = true # if false, a data source with a matching name is created instead
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
-
 
 module "iam_compartment9" {
   source                  = "./modules/iam-compartment"
@@ -98,7 +100,6 @@ module "iam_compartment9" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment10" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
@@ -108,7 +109,6 @@ module "iam_compartment10" {
   compartment_create      = true # if false, a data source with a matching name is created instead
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
-
 
 module "iam_compartment11" {
   source                  = "./modules/iam-compartment"
@@ -120,7 +120,6 @@ module "iam_compartment11" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment12" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
@@ -130,7 +129,6 @@ module "iam_compartment12" {
   compartment_create      = true # if false, a data source with a matching name is created instead
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
-
 
 module "iam_compartment13" {
   source                  = "./modules/iam-compartment"
@@ -142,7 +140,6 @@ module "iam_compartment13" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment14" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
@@ -153,13 +150,62 @@ module "iam_compartment14" {
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
 
-
 module "iam_compartment15" {
   source                  = "./modules/iam-compartment"
   tenancy_ocid            = var.tenancy_ocid
   compartment_id          = var.tenancy_ocid # define the parent compartment. Creation at tenancy root if omitted
   compartment_name        = "tseeducomp15"
   compartment_description = "compartment at root level for user15"
+  compartment_create      = true # if false, a data source with a matching name is created instead
+  enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
+}
+
+module "iam_compartment16" {
+  source                  = "./modules/iam-compartment"
+  tenancy_ocid            = var.tenancy_ocid
+  compartment_id          = var.tenancy_ocid # define the parent compartment. Creation at tenancy root if omitted
+  compartment_name        = "tseeducomp16"
+  compartment_description = "compartment at root level for user16"
+  compartment_create      = true # if false, a data source with a matching name is created instead
+  enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
+}
+
+module "iam_compartment17" {
+  source                  = "./modules/iam-compartment"
+  tenancy_ocid            = var.tenancy_ocid
+  compartment_id          = var.tenancy_ocid # define the parent compartment. Creation at tenancy root if omitted
+  compartment_name        = "tseeducomp17"
+  compartment_description = "compartment at root level for user17"
+  compartment_create      = true # if false, a data source with a matching name is created instead
+  enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
+}
+
+module "iam_compartment18" {
+  source                  = "./modules/iam-compartment"
+  tenancy_ocid            = var.tenancy_ocid
+  compartment_id          = var.tenancy_ocid # define the parent compartment. Creation at tenancy root if omitted
+  compartment_name        = "tseeducomp18"
+  compartment_description = "compartment at root level for user18"
+  compartment_create      = true # if false, a data source with a matching name is created instead
+  enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
+}
+
+module "iam_compartment19" {
+  source                  = "./modules/iam-compartment"
+  tenancy_ocid            = var.tenancy_ocid
+  compartment_id          = var.tenancy_ocid # define the parent compartment. Creation at tenancy root if omitted
+  compartment_name        = "tseeducomp19"
+  compartment_description = "compartment at root level for user19"
+  compartment_create      = true # if false, a data source with a matching name is created instead
+  enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
+}
+
+module "iam_compartment20" {
+  source                  = "./modules/iam-compartment"
+  tenancy_ocid            = var.tenancy_ocid
+  compartment_id          = var.tenancy_ocid # define the parent compartment. Creation at tenancy root if omitted
+  compartment_name        = "tseeducomp20"
+  compartment_description = "compartment at root level for user20"
   compartment_create      = true # if false, a data source with a matching name is created instead
   enable_delete           = true # if false, on `terraform destroy`, compartment is deleted from the terraform state but not from oci
 }
@@ -243,6 +289,31 @@ module "iam_users" {
       description = "tseuser15 created by Sangwan"
       email       = "tseuser15@tseedu.com"
     },
+    {
+      name        = "tseuser16"
+      description = "tseuser16 created by Sangwan"
+      email       = "tseuser16@tseedu.com"
+    },
+    {
+      name        = "tseuser17"
+      description = "tseuser17 created by Sangwan"
+      email       = "tseuser17@tseedu.com"
+    },
+    {
+      name        = "tseuser18"
+      description = "tseuser18 created by Sangwan"
+      email       = "tseuser18@tseedu.com"
+    },
+    {
+      name        = "tseuser19"
+      description = "tseuser19 created by Sangwan"
+      email       = "tseuser19@tseedu.com"
+    },
+    {
+      name        = "tseuser20"
+      description = "tseuser20 created by Sangwan"
+      email       = "tseuser20@tseedu.com"
+    },
   ]
 }
 
@@ -253,26 +324,32 @@ module "iam_group1" {
   group_description     = "Group 1"
   user_ids              = [element(module.iam_users.user_id, 0)] # a list of user ocids
   policy_name           = "policy1"
-  policy_compartment_id = module.iam_compartment1.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group1.group_name} to use volumes in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to use volume-attachments in compartment tseeducomp1",
+  "Allow group ${module.iam_group1.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group1.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group1.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group1.group_name} to manage object-family in compartment tseeducomp1",
+  "Allow group ${module.iam_group1.group_name} to manage vaults in compartment tseeducomp1",
+  "Allow group ${module.iam_group1.group_name} to manage keys in compartment tseeducomp1",
+  "Allow group ${module.iam_group1.group_name} to manage secret-family in compartment tseeducomp1",
+  "Allow group ${module.iam_group1.group_name} to manage stream-family in compartment tseeducomp1",
+  "Allow group ${module.iam_group1.group_name} to use generative-ai-family in compartment tseeducomp1",
+  "Allow group ${module.iam_group1.group_name} to read metrics in compartment tseeducomp1",
   "Allow group ${module.iam_group1.group_name} to manage log-groups in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to read metrics in compartment tseeducomp1",
   "Allow group ${module.iam_group1.group_name} to read log-content in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to read metrics in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage tag-namespaces in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage generative-ai-chat in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage generative-ai-text-generation in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage generative-ai-text-summarization in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage generative-ai-text-embedding in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage generative-ai-work-request in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage generative-ai-family in compartment tseeducomp1",
-  "Allow group ${module.iam_group1.group_name} to manage data-science-family in compartment tseeducomp1",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment1]
 }
-
 
 module "iam_group2" {
   source                = "./modules/iam-group"
@@ -281,26 +358,32 @@ module "iam_group2" {
   group_description     = "Group 2"
   user_ids              = [element(module.iam_users.user_id, 1)] # a list of user ocids
   policy_name           = "policy2"
-  policy_compartment_id = module.iam_compartment2.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group2.group_name} to use volumes in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to use volume-attachments in compartment tseeducomp2",
+  "Allow group ${module.iam_group2.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group2.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group2.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group2.group_name} to manage object-family in compartment tseeducomp2",
+  "Allow group ${module.iam_group2.group_name} to manage vaults in compartment tseeducomp2",
+  "Allow group ${module.iam_group2.group_name} to manage keys in compartment tseeducomp2",
+  "Allow group ${module.iam_group2.group_name} to manage secret-family in compartment tseeducomp2",
+  "Allow group ${module.iam_group2.group_name} to manage stream-family in compartment tseeducomp2",
+  "Allow group ${module.iam_group2.group_name} to use generative-ai-family in compartment tseeducomp2",
+  "Allow group ${module.iam_group2.group_name} to read metrics in compartment tseeducomp2",
   "Allow group ${module.iam_group2.group_name} to manage log-groups in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to read metrics in compartment tseeducomp2",
   "Allow group ${module.iam_group2.group_name} to read log-content in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to read metrics in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage tag-namespaces in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage generative-ai-chat in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage generative-ai-text-generation in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage generative-ai-text-summarization in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage generative-ai-text-embedding in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage generative-ai-work-request in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage generative-ai-family in compartment tseeducomp2",
-  "Allow group ${module.iam_group2.group_name} to manage data-science-family in compartment tseeducomp2",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment2]
 }
-
 
 module "iam_group3" {
   source                = "./modules/iam-group"
@@ -309,26 +392,32 @@ module "iam_group3" {
   group_description     = "Group 3"
   user_ids              = [element(module.iam_users.user_id, 2)] # a list of user ocids
   policy_name           = "policy3"
-  policy_compartment_id = module.iam_compartment3.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group3.group_name} to use volumes in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to use volume-attachments in compartment tseeducomp3",
+  "Allow group ${module.iam_group3.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group3.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group3.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group3.group_name} to manage object-family in compartment tseeducomp3",
+  "Allow group ${module.iam_group3.group_name} to manage vaults in compartment tseeducomp3",
+  "Allow group ${module.iam_group3.group_name} to manage keys in compartment tseeducomp3",
+  "Allow group ${module.iam_group3.group_name} to manage secret-family in compartment tseeducomp3",
+  "Allow group ${module.iam_group3.group_name} to manage stream-family in compartment tseeducomp3",
+  "Allow group ${module.iam_group3.group_name} to use generative-ai-family in compartment tseeducomp3",
+  "Allow group ${module.iam_group3.group_name} to read metrics in compartment tseeducomp3",
   "Allow group ${module.iam_group3.group_name} to manage log-groups in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to read metrics in compartment tseeducomp3",
   "Allow group ${module.iam_group3.group_name} to read log-content in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to read metrics in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage tag-namespaces in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage generative-ai-chat in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage generative-ai-text-generation in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage generative-ai-text-summarization in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage generative-ai-text-embedding in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage generative-ai-work-request in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage generative-ai-family in compartment tseeducomp3",
-  "Allow group ${module.iam_group3.group_name} to manage data-science-family in compartment tseeducomp3",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment3]
 }
-
 
 module "iam_group4" {
   source                = "./modules/iam-group"
@@ -337,26 +426,32 @@ module "iam_group4" {
   group_description     = "Group 4"
   user_ids              = [element(module.iam_users.user_id, 3)] # a list of user ocids
   policy_name           = "policy4"
-  policy_compartment_id = module.iam_compartment4.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group4.group_name} to use volumes in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to use volume-attachments in compartment tseeducomp4",
+  "Allow group ${module.iam_group4.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group4.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group4.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group4.group_name} to manage object-family in compartment tseeducomp4",
+  "Allow group ${module.iam_group4.group_name} to manage vaults in compartment tseeducomp4",
+  "Allow group ${module.iam_group4.group_name} to manage keys in compartment tseeducomp4",
+  "Allow group ${module.iam_group4.group_name} to manage secret-family in compartment tseeducomp4",
+  "Allow group ${module.iam_group4.group_name} to manage stream-family in compartment tseeducomp4",
+  "Allow group ${module.iam_group4.group_name} to use generative-ai-family in compartment tseeducomp4",
+  "Allow group ${module.iam_group4.group_name} to read metrics in compartment tseeducomp4",
   "Allow group ${module.iam_group4.group_name} to manage log-groups in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to read metrics in compartment tseeducomp4",
   "Allow group ${module.iam_group4.group_name} to read log-content in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to read metrics in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage tag-namespaces in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage generative-ai-chat in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage generative-ai-text-generation in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage generative-ai-text-summarization in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage generative-ai-text-embedding in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage generative-ai-work-request in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage generative-ai-family in compartment tseeducomp4",
-  "Allow group ${module.iam_group4.group_name} to manage data-science-family in compartment tseeducomp4",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment4]
 }
-
 
 module "iam_group5" {
   source                = "./modules/iam-group"
@@ -365,26 +460,32 @@ module "iam_group5" {
   group_description     = "Group 5"
   user_ids              = [element(module.iam_users.user_id, 4)] # a list of user ocids
   policy_name           = "policy5"
-  policy_compartment_id = module.iam_compartment5.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group5.group_name} to use volumes in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to use volume-attachments in compartment tseeducomp5",
+  "Allow group ${module.iam_group5.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group5.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group5.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group5.group_name} to manage object-family in compartment tseeducomp5",
+  "Allow group ${module.iam_group5.group_name} to manage vaults in compartment tseeducomp5",
+  "Allow group ${module.iam_group5.group_name} to manage keys in compartment tseeducomp5",
+  "Allow group ${module.iam_group5.group_name} to manage secret-family in compartment tseeducomp5",
+  "Allow group ${module.iam_group5.group_name} to manage stream-family in compartment tseeducomp5",
+  "Allow group ${module.iam_group5.group_name} to use generative-ai-family in compartment tseeducomp5",
+  "Allow group ${module.iam_group5.group_name} to read metrics in compartment tseeducomp5",
   "Allow group ${module.iam_group5.group_name} to manage log-groups in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to read metrics in compartment tseeducomp5",
   "Allow group ${module.iam_group5.group_name} to read log-content in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to read metrics in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage tag-namespaces in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage generative-ai-chat in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage generative-ai-text-generation in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage generative-ai-text-summarization in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage generative-ai-text-embedding in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage generative-ai-work-request in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage generative-ai-family in compartment tseeducomp5",
-  "Allow group ${module.iam_group5.group_name} to manage data-science-family in compartment tseeducomp5",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment5]
 }
-
 
 module "iam_group6" {
   source                = "./modules/iam-group"
@@ -393,26 +494,32 @@ module "iam_group6" {
   group_description     = "Group 6"
   user_ids              = [element(module.iam_users.user_id, 5)] # a list of user ocids
   policy_name           = "policy6"
-  policy_compartment_id = module.iam_compartment6.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group6.group_name} to use volumes in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to use volume-attachments in compartment tseeducomp6",
+  "Allow group ${module.iam_group6.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group6.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group6.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group6.group_name} to manage object-family in compartment tseeducomp6",
+  "Allow group ${module.iam_group6.group_name} to manage vaults in compartment tseeducomp6",
+  "Allow group ${module.iam_group6.group_name} to manage keys in compartment tseeducomp6",
+  "Allow group ${module.iam_group6.group_name} to manage secret-family in compartment tseeducomp6",
+  "Allow group ${module.iam_group6.group_name} to manage stream-family in compartment tseeducomp6",
+  "Allow group ${module.iam_group6.group_name} to use generative-ai-family in compartment tseeducomp6",
+  "Allow group ${module.iam_group6.group_name} to read metrics in compartment tseeducomp6",
   "Allow group ${module.iam_group6.group_name} to manage log-groups in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to read metrics in compartment tseeducomp6",
   "Allow group ${module.iam_group6.group_name} to read log-content in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to read metrics in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage tag-namespaces in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage generative-ai-chat in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage generative-ai-text-generation in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage generative-ai-text-summarization in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage generative-ai-text-embedding in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage generative-ai-work-request in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage generative-ai-family in compartment tseeducomp6",
-  "Allow group ${module.iam_group6.group_name} to manage data-science-family in compartment tseeducomp6",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment6]
 }
-
 
 module "iam_group7" {
   source                = "./modules/iam-group"
@@ -421,26 +528,32 @@ module "iam_group7" {
   group_description     = "Group 7"
   user_ids              = [element(module.iam_users.user_id, 6)] # a list of user ocids
   policy_name           = "policy7"
-  policy_compartment_id = module.iam_compartment7.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group7.group_name} to use volumes in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to use volume-attachments in compartment tseeducomp7",
+  "Allow group ${module.iam_group7.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group7.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group7.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group7.group_name} to manage object-family in compartment tseeducomp7",
+  "Allow group ${module.iam_group7.group_name} to manage vaults in compartment tseeducomp7",
+  "Allow group ${module.iam_group7.group_name} to manage keys in compartment tseeducomp7",
+  "Allow group ${module.iam_group7.group_name} to manage secret-family in compartment tseeducomp7",
+  "Allow group ${module.iam_group7.group_name} to manage stream-family in compartment tseeducomp7",
+  "Allow group ${module.iam_group7.group_name} to use generative-ai-family in compartment tseeducomp7",
+  "Allow group ${module.iam_group7.group_name} to read metrics in compartment tseeducomp7",
   "Allow group ${module.iam_group7.group_name} to manage log-groups in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to read metrics in compartment tseeducomp7",
   "Allow group ${module.iam_group7.group_name} to read log-content in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to read metrics in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage tag-namespaces in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage generative-ai-chat in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage generative-ai-text-generation in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage generative-ai-text-summarization in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage generative-ai-text-embedding in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage generative-ai-work-request in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage generative-ai-family in compartment tseeducomp7",
-  "Allow group ${module.iam_group7.group_name} to manage data-science-family in compartment tseeducomp7",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment7]
 }
-
 
 module "iam_group8" {
   source                = "./modules/iam-group"
@@ -449,26 +562,32 @@ module "iam_group8" {
   group_description     = "Group 8"
   user_ids              = [element(module.iam_users.user_id, 7)] # a list of user ocids
   policy_name           = "policy8"
-  policy_compartment_id = module.iam_compartment8.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group8.group_name} to use volumes in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to use volume-attachments in compartment tseeducomp8",
+  "Allow group ${module.iam_group8.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group8.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group8.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group8.group_name} to manage object-family in compartment tseeducomp8",
+  "Allow group ${module.iam_group8.group_name} to manage vaults in compartment tseeducomp8",
+  "Allow group ${module.iam_group8.group_name} to manage keys in compartment tseeducomp8",
+  "Allow group ${module.iam_group8.group_name} to manage secret-family in compartment tseeducomp8",
+  "Allow group ${module.iam_group8.group_name} to manage stream-family in compartment tseeducomp8",
+  "Allow group ${module.iam_group8.group_name} to use generative-ai-family in compartment tseeducomp8",
+  "Allow group ${module.iam_group8.group_name} to read metrics in compartment tseeducomp8",
   "Allow group ${module.iam_group8.group_name} to manage log-groups in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to read metrics in compartment tseeducomp8",
   "Allow group ${module.iam_group8.group_name} to read log-content in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to read metrics in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage tag-namespaces in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage generative-ai-chat in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage generative-ai-text-generation in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage generative-ai-text-summarization in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage generative-ai-text-embedding in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage generative-ai-work-request in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage generative-ai-family in compartment tseeducomp8",
-  "Allow group ${module.iam_group8.group_name} to manage data-science-family in compartment tseeducomp8",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment8]
 }
-
 
 module "iam_group9" {
   source                = "./modules/iam-group"
@@ -477,26 +596,32 @@ module "iam_group9" {
   group_description     = "Group 9"
   user_ids              = [element(module.iam_users.user_id, 8)] # a list of user ocids
   policy_name           = "policy9"
-  policy_compartment_id = module.iam_compartment9.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group9.group_name} to use volumes in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to use volume-attachments in compartment tseeducomp9",
+  "Allow group ${module.iam_group9.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group9.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group9.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group9.group_name} to manage object-family in compartment tseeducomp9",
+  "Allow group ${module.iam_group9.group_name} to manage vaults in compartment tseeducomp9",
+  "Allow group ${module.iam_group9.group_name} to manage keys in compartment tseeducomp9",
+  "Allow group ${module.iam_group9.group_name} to manage secret-family in compartment tseeducomp9",
+  "Allow group ${module.iam_group9.group_name} to manage stream-family in compartment tseeducomp9",
+  "Allow group ${module.iam_group9.group_name} to use generative-ai-family in compartment tseeducomp9",
+  "Allow group ${module.iam_group9.group_name} to read metrics in compartment tseeducomp9",
   "Allow group ${module.iam_group9.group_name} to manage log-groups in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to read metrics in compartment tseeducomp9",
   "Allow group ${module.iam_group9.group_name} to read log-content in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to read metrics in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage tag-namespaces in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage generative-ai-chat in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage generative-ai-text-generation in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage generative-ai-text-summarization in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage generative-ai-text-embedding in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage generative-ai-work-request in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage generative-ai-family in compartment tseeducomp9",
-  "Allow group ${module.iam_group9.group_name} to manage data-science-family in compartment tseeducomp9",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment9]
 }
-
 
 module "iam_group10" {
   source                = "./modules/iam-group"
@@ -505,26 +630,32 @@ module "iam_group10" {
   group_description     = "Group 10"
   user_ids              = [element(module.iam_users.user_id, 9)] # a list of user ocids
   policy_name           = "policy10"
-  policy_compartment_id = module.iam_compartment10.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group10.group_name} to use volumes in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to use volume-attachments in compartment tseeducomp10",
+  "Allow group ${module.iam_group10.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group10.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group10.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group10.group_name} to manage object-family in compartment tseeducomp10",
+  "Allow group ${module.iam_group10.group_name} to manage vaults in compartment tseeducomp10",
+  "Allow group ${module.iam_group10.group_name} to manage keys in compartment tseeducomp10",
+  "Allow group ${module.iam_group10.group_name} to manage secret-family in compartment tseeducomp10",
+  "Allow group ${module.iam_group10.group_name} to manage stream-family in compartment tseeducomp10",
+  "Allow group ${module.iam_group10.group_name} to use generative-ai-family in compartment tseeducomp10",
+  "Allow group ${module.iam_group10.group_name} to read metrics in compartment tseeducomp10",
   "Allow group ${module.iam_group10.group_name} to manage log-groups in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to read metrics in compartment tseeducomp10",
   "Allow group ${module.iam_group10.group_name} to read log-content in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to read metrics in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage tag-namespaces in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage generative-ai-chat in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage generative-ai-text-generation in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage generative-ai-text-summarization in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage generative-ai-text-embedding in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage generative-ai-work-request in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage generative-ai-family in compartment tseeducomp10",
-  "Allow group ${module.iam_group10.group_name} to manage data-science-family in compartment tseeducomp10",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment10]
 }
-
 
 module "iam_group11" {
   source                = "./modules/iam-group"
@@ -533,26 +664,32 @@ module "iam_group11" {
   group_description     = "Group 11"
   user_ids              = [element(module.iam_users.user_id, 10)] # a list of user ocids
   policy_name           = "policy11"
-  policy_compartment_id = module.iam_compartment11.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group11.group_name} to use volumes in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to use volume-attachments in compartment tseeducomp11",
+  "Allow group ${module.iam_group11.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group11.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group11.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group11.group_name} to manage object-family in compartment tseeducomp11",
+  "Allow group ${module.iam_group11.group_name} to manage vaults in compartment tseeducomp11",
+  "Allow group ${module.iam_group11.group_name} to manage keys in compartment tseeducomp11",
+  "Allow group ${module.iam_group11.group_name} to manage secret-family in compartment tseeducomp11",
+  "Allow group ${module.iam_group11.group_name} to manage stream-family in compartment tseeducomp11",
+  "Allow group ${module.iam_group11.group_name} to use generative-ai-family in compartment tseeducomp11",
+  "Allow group ${module.iam_group11.group_name} to read metrics in compartment tseeducomp11",
   "Allow group ${module.iam_group11.group_name} to manage log-groups in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to read metrics in compartment tseeducomp11",
   "Allow group ${module.iam_group11.group_name} to read log-content in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to read metrics in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage tag-namespaces in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage generative-ai-chat in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage generative-ai-text-generation in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage generative-ai-text-summarization in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage generative-ai-text-embedding in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage generative-ai-work-request in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage generative-ai-family in compartment tseeducomp11",
-  "Allow group ${module.iam_group11.group_name} to manage data-science-family in compartment tseeducomp11",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment11]
 }
-
 
 module "iam_group12" {
   source                = "./modules/iam-group"
@@ -561,26 +698,32 @@ module "iam_group12" {
   group_description     = "Group 12"
   user_ids              = [element(module.iam_users.user_id, 11)] # a list of user ocids
   policy_name           = "policy12"
-  policy_compartment_id = module.iam_compartment12.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group12.group_name} to use volumes in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to use volume-attachments in compartment tseeducomp12",
+  "Allow group ${module.iam_group12.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group12.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group12.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group12.group_name} to manage object-family in compartment tseeducomp12",
+  "Allow group ${module.iam_group12.group_name} to manage vaults in compartment tseeducomp12",
+  "Allow group ${module.iam_group12.group_name} to manage keys in compartment tseeducomp12",
+  "Allow group ${module.iam_group12.group_name} to manage secret-family in compartment tseeducomp12",
+  "Allow group ${module.iam_group12.group_name} to manage stream-family in compartment tseeducomp12",
+  "Allow group ${module.iam_group12.group_name} to use generative-ai-family in compartment tseeducomp12",
+  "Allow group ${module.iam_group12.group_name} to read metrics in compartment tseeducomp12",
   "Allow group ${module.iam_group12.group_name} to manage log-groups in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to read metrics in compartment tseeducomp12",
   "Allow group ${module.iam_group12.group_name} to read log-content in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to read metrics in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage tag-namespaces in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage generative-ai-chat in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage generative-ai-text-generation in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage generative-ai-text-summarization in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage generative-ai-text-embedding in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage generative-ai-work-request in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage generative-ai-family in compartment tseeducomp12",
-  "Allow group ${module.iam_group12.group_name} to manage data-science-family in compartment tseeducomp12",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment12]
 }
-
 
 module "iam_group13" {
   source                = "./modules/iam-group"
@@ -589,26 +732,32 @@ module "iam_group13" {
   group_description     = "Group 13"
   user_ids              = [element(module.iam_users.user_id, 12)] # a list of user ocids
   policy_name           = "policy13"
-  policy_compartment_id = module.iam_compartment13.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group13.group_name} to use volumes in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to use volume-attachments in compartment tseeducomp13",
+  "Allow group ${module.iam_group13.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group13.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group13.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group13.group_name} to manage object-family in compartment tseeducomp13",
+  "Allow group ${module.iam_group13.group_name} to manage vaults in compartment tseeducomp13",
+  "Allow group ${module.iam_group13.group_name} to manage keys in compartment tseeducomp13",
+  "Allow group ${module.iam_group13.group_name} to manage secret-family in compartment tseeducomp13",
+  "Allow group ${module.iam_group13.group_name} to manage stream-family in compartment tseeducomp13",
+  "Allow group ${module.iam_group13.group_name} to use generative-ai-family in compartment tseeducomp13",
+  "Allow group ${module.iam_group13.group_name} to read metrics in compartment tseeducomp13",
   "Allow group ${module.iam_group13.group_name} to manage log-groups in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to read metrics in compartment tseeducomp13",
   "Allow group ${module.iam_group13.group_name} to read log-content in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to read metrics in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage tag-namespaces in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage generative-ai-chat in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage generative-ai-text-generation in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage generative-ai-text-summarization in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage generative-ai-text-embedding in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage generative-ai-work-request in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage generative-ai-family in compartment tseeducomp13",
-  "Allow group ${module.iam_group13.group_name} to manage data-science-family in compartment tseeducomp13",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment13]
 }
-
 
 module "iam_group14" {
   source                = "./modules/iam-group"
@@ -617,26 +766,32 @@ module "iam_group14" {
   group_description     = "Group 14"
   user_ids              = [element(module.iam_users.user_id, 13)] # a list of user ocids
   policy_name           = "policy14"
-  policy_compartment_id = module.iam_compartment14.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group14.group_name} to use volumes in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to use volume-attachments in compartment tseeducomp14",
+  "Allow group ${module.iam_group14.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group14.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group14.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group14.group_name} to manage object-family in compartment tseeducomp14",
+  "Allow group ${module.iam_group14.group_name} to manage vaults in compartment tseeducomp14",
+  "Allow group ${module.iam_group14.group_name} to manage keys in compartment tseeducomp14",
+  "Allow group ${module.iam_group14.group_name} to manage secret-family in compartment tseeducomp14",
+  "Allow group ${module.iam_group14.group_name} to manage stream-family in compartment tseeducomp14",
+  "Allow group ${module.iam_group14.group_name} to use generative-ai-family in compartment tseeducomp14",
+  "Allow group ${module.iam_group14.group_name} to read metrics in compartment tseeducomp14",
   "Allow group ${module.iam_group14.group_name} to manage log-groups in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to read metrics in compartment tseeducomp14",
   "Allow group ${module.iam_group14.group_name} to read log-content in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to read metrics in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage tag-namespaces in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage generative-ai-chat in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage generative-ai-text-generation in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage generative-ai-text-summarization in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage generative-ai-text-embedding in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage generative-ai-work-request in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage generative-ai-family in compartment tseeducomp14",
-  "Allow group ${module.iam_group14.group_name} to manage data-science-family in compartment tseeducomp14",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment14]
 }
-
 
 module "iam_group15" {
   source                = "./modules/iam-group"
@@ -645,23 +800,199 @@ module "iam_group15" {
   group_description     = "Group 15"
   user_ids              = [element(module.iam_users.user_id, 14)] # a list of user ocids
   policy_name           = "policy15"
-  policy_compartment_id = module.iam_compartment15.compartment_id
+  policy_compartment_id = var.tenancy_ocid
   policy_description    = "policy created by Ram N Sangwan"
   policy_statements = [
-  "Allow group ${module.iam_group15.group_name} to use volumes in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to use volume-attachments in compartment tseeducomp15",
+  "Allow group ${module.iam_group15.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group15.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group15.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group15.group_name} to manage object-family in compartment tseeducomp15",
+  "Allow group ${module.iam_group15.group_name} to manage vaults in compartment tseeducomp15",
+  "Allow group ${module.iam_group15.group_name} to manage keys in compartment tseeducomp15",
+  "Allow group ${module.iam_group15.group_name} to manage secret-family in compartment tseeducomp15",
+  "Allow group ${module.iam_group15.group_name} to manage stream-family in compartment tseeducomp15",
+  "Allow group ${module.iam_group15.group_name} to use generative-ai-family in compartment tseeducomp15",
+  "Allow group ${module.iam_group15.group_name} to read metrics in compartment tseeducomp15",
   "Allow group ${module.iam_group15.group_name} to manage log-groups in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to read metrics in compartment tseeducomp15",
   "Allow group ${module.iam_group15.group_name} to read log-content in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to read metrics in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage tag-namespaces in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage generative-ai-chat in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage generative-ai-text-generation in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage generative-ai-text-summarization in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage generative-ai-text-embedding in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage generative-ai-work-request in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage generative-ai-family in compartment tseeducomp15",
-  "Allow group ${module.iam_group15.group_name} to manage data-science-family in compartment tseeducomp15",
 ]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment15]
 }
 
+module "iam_group16" {
+  source                = "./modules/iam-group"
+  tenancy_ocid          = var.tenancy_ocid
+  group_name            = "tsegroup16"
+  group_description     = "Group 16"
+  user_ids              = [element(module.iam_users.user_id, 15)] # a list of user ocids
+  policy_name           = "policy16"
+  policy_compartment_id = var.tenancy_ocid
+  policy_description    = "policy created by Ram N Sangwan"
+  policy_statements = [
+  "Allow group ${module.iam_group16.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group16.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group16.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group16.group_name} to manage object-family in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to manage vaults in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to manage keys in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to manage secret-family in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to manage stream-family in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to use generative-ai-family in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to read metrics in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to manage log-groups in compartment tseeducomp16",
+  "Allow group ${module.iam_group16.group_name} to read log-content in compartment tseeducomp16",
+]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment16]
+}
+
+module "iam_group17" {
+  source                = "./modules/iam-group"
+  tenancy_ocid          = var.tenancy_ocid
+  group_name            = "tsegroup17"
+  group_description     = "Group 17"
+  user_ids              = [element(module.iam_users.user_id, 16)] # a list of user ocids
+  policy_name           = "policy17"
+  policy_compartment_id = var.tenancy_ocid
+  policy_description    = "policy created by Ram N Sangwan"
+  policy_statements = [
+  "Allow group ${module.iam_group17.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group17.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group17.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group17.group_name} to manage object-family in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to manage vaults in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to manage keys in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to manage secret-family in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to manage stream-family in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to use generative-ai-family in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to read metrics in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to manage log-groups in compartment tseeducomp17",
+  "Allow group ${module.iam_group17.group_name} to read log-content in compartment tseeducomp17",
+]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment17]
+}
+
+module "iam_group18" {
+  source                = "./modules/iam-group"
+  tenancy_ocid          = var.tenancy_ocid
+  group_name            = "tsegroup18"
+  group_description     = "Group 18"
+  user_ids              = [element(module.iam_users.user_id, 17)] # a list of user ocids
+  policy_name           = "policy18"
+  policy_compartment_id = var.tenancy_ocid
+  policy_description    = "policy created by Ram N Sangwan"
+  policy_statements = [
+  "Allow group ${module.iam_group18.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group18.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group18.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group18.group_name} to manage object-family in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to manage vaults in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to manage keys in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to manage secret-family in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to manage stream-family in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to use generative-ai-family in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to read metrics in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to manage log-groups in compartment tseeducomp18",
+  "Allow group ${module.iam_group18.group_name} to read log-content in compartment tseeducomp18",
+]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment18]
+}
+
+module "iam_group19" {
+  source                = "./modules/iam-group"
+  tenancy_ocid          = var.tenancy_ocid
+  group_name            = "tsegroup19"
+  group_description     = "Group 19"
+  user_ids              = [element(module.iam_users.user_id, 18)] # a list of user ocids
+  policy_name           = "policy19"
+  policy_compartment_id = var.tenancy_ocid
+  policy_description    = "policy created by Ram N Sangwan"
+  policy_statements = [
+  "Allow group ${module.iam_group19.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group19.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group19.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group19.group_name} to manage object-family in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to manage vaults in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to manage keys in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to manage secret-family in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to manage stream-family in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to use generative-ai-family in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to read metrics in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to manage log-groups in compartment tseeducomp19",
+  "Allow group ${module.iam_group19.group_name} to read log-content in compartment tseeducomp19",
+]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment19]
+}
+
+module "iam_group20" {
+  source                = "./modules/iam-group"
+  tenancy_ocid          = var.tenancy_ocid
+  group_name            = "tsegroup20"
+  group_description     = "Group 20"
+  user_ids              = [element(module.iam_users.user_id, 19)] # a list of user ocids
+  policy_name           = "policy20"
+  policy_compartment_id = var.tenancy_ocid
+  policy_description    = "policy created by Ram N Sangwan"
+  policy_statements = [
+  "Allow group ${module.iam_group20.group_name} to inspect compartments in tenancy",
+  "Allow group ${module.iam_group20.group_name} to read objectstorage-namespaces in tenancy",
+  "Allow group ${module.iam_group20.group_name} to use ai-data-platforms in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to read buckets in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to manage objects in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to read secret-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to use stream-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to use generative-ai-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to use autonomous-database-family in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to read metrics in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to read log-content in compartment tseeduaidp",
+  "Allow group ${module.iam_group20.group_name} to manage object-family in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to manage vaults in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to manage keys in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to manage secret-family in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to manage stream-family in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to use generative-ai-family in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to read metrics in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to manage log-groups in compartment tseeducomp20",
+  "Allow group ${module.iam_group20.group_name} to read log-content in compartment tseeducomp20",
+]
+  depends_on        = [module.iam_compartment_aidp, module.iam_compartment20]
+}

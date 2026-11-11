@@ -19,3 +19,9 @@ output "user_id" {
   value       = oci_identity_user.this[*].id
   description = "list of users OCID"
 }
+
+output "passwords" {
+  value       = oci_identity_ui_password.this[*].password
+  description = "list of one-time console passwords (same order as names)"
+  sensitive   = true
+}
